@@ -64,7 +64,7 @@ You should see a welcome message and the MySQL command line prompt mysql>. Type 
 
 Optional: On your local machine download and install the MySQLWorkbench administration tool from http://www.mysql.com/products/workbench/ and use it to connect to the database.
 
-# DELIVERABLE 1:
+### DELIVERABLE 1:
 Copy the estimated costs that were shown in the launch wizard into the report.
 
 Compare the costs of your RDS instance to a continuously running EC2 instance of the same size using the AWS calculator. (Don't forget to uncheck the Free Usage Tier checkbox at the top.)
@@ -131,7 +131,7 @@ If you receive an error message "The default settings file does not exist" or "T
 cd /etc/drupal/7/sites/default
 sudo cp -a settings.php default.settings.php
 sudo chown www-data:www-data settings.php
-# DELIVERABLE 2:
+### DELIVERABLE 2:
 Copy the content of the generated file /etc/drupal/7/sites/default/dbconfig.php into the report.
 
 # TASK 3: CREATE A CUSTOM VIRTUAL MACHINE IMAGE
@@ -147,7 +147,7 @@ Click Create Image. The instance will shut down temporarily and the image will b
 
 In the console bring up the AMIs panel. Wait until the status of the AMI goes from pending to available.
 
-# DELIVERABLE 3:
+### DELIVERABLE 3:
 Copy a screenshot of the AWS console showing the AMI parameters into the report.
 
 # TASK 4: CREATE A LOAD BALANCER
@@ -169,7 +169,7 @@ In the EC2 console select the newly created load balancer. In the lower half of 
 
 Log into the Drupal master instance. Examine the Apache access log /var/log/apache2/access.log to see who is connecting to the web server**. **
 
-# DELIVERABLE 4:
+### DELIVERABLE 4:
 On your local machine resolve the DNS name of the load balancer into an IP address using the nslookup command (Linux or Windows). Write the DNS name and the resolved IP Address(es) into the report.
 
 In the Apache access log identify the health check accesses from the load balancer and copy some samples into the report.
@@ -183,7 +183,7 @@ Make sure that the instance works correctly by navigating with your browser to t
 
 Using the AWS console connect the instance to the load balancer. Watch the status of the instance go from Out of Service to In Service.
 
-# DELIVERABLE 5:
+### DELIVERABLE 5:
 Draw a diagram of the setup you have created showing the components (instances, database, load balancer, client) and how they are connected. Include the security groups as well.
 
 Using the Simple Monthly Calculator calculate the monthly cost of this setup. You can ignore traffic costs. (Make sure you don't forget to include a component in the calculation. Also don't forget to uncheck the Free Usage Tier checkbox at the top.)
@@ -203,7 +203,7 @@ Observe which of the instances gets the load. Increase the load and re-run the t
 
 Immediately after having created a high load for the site, re-run the nslookup command to resolve the DNS name of the load balancer into IP addresses to see if there are any changes.
 
-# DELIVERABLE 6:
+### DELIVERABLE 6:
 Document your observations. Include screenshots of JMeter and the AWS console monitoring output.
 
 When you resolve the DNS name of the load balancer into IP addresses while the load balancer is under high load what do you see? Explain.
