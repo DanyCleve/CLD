@@ -34,5 +34,5 @@ bla bla bla
 
 ![MacDown Screenshot](/Users/mac/Desktop/semestre_2/CLD/Laboratoire/Lab02/Screen\ Shot\ 2018-03-06\ at\ 12.14.09.png)
 
-##TASK 2: CONFIGURE THE DRUPAL MASTER INSTANCE TO USE THE RDS DATABASE
+## TASK 2: CONFIGURE THE DRUPAL MASTER INSTANCE TO USE THE RDS DATABASE
 
