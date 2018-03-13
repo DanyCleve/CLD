@@ -36,3 +36,21 @@ bla bla bla
 
 ## TASK 2: CONFIGURE THE DRUPAL MASTER INSTANCE TO USE THE RDS DATABASE
 
+![png](Output_06.png)
+
+## TASK 3: CREATE A CUSTOM VIRTUAL MACHINE IMAGE
+
+![png](Output_07.png)
+
+## TASK 4: CREATE A LOAD BALANCER
+
+#### 1- On your local machine resolve the DNS name of the load balancer into an IP address using the nslookup command (Linux or Windows). Write the DNS name and the resolved IP Address(es) into the report
+![png](Output_08.png)
+
+#### 2- In the Apache access log identify the health check accesses from the load balancer and copy some samples into the report
+
+![png](Output_09.png)
+
+## TASK 5: LAUNCH A SECOND INSTANCE FROM THE CUSTOM IMAGE
+
+## TASK 6: TEST THE DISTRIBUTED APPLICATION
