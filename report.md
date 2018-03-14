@@ -27,10 +27,20 @@
 
 ![png](Output_02.png)
 
-The `RDS` instance is finally more exoansive than the `EC2` instance continuously running. But this is worth it because the `RDS` instance is dedicated for the storage and has more space in our case.  
+The `RDS` instance is finally more expansive than the `EC2` instance continuously running. But this is worth it because the `RDS` instance is dedicated for the storage and has more space in our case.  
 
 > 3- In a two-tier architecture the web application and the database are kept separate and run on different hosts. Imagine that for the second tier instead of using RDS to store the data you would create a virtual machine in EC2 and install and run yourself a database on it. If you were the Head of IT of a medium-size business, how would you argue in favor of using a database as a service instead of running your own database on an EC2 instance? How would you argue against it?
-bla bla bla
+
+The usage of `RDS` is better than a self-hosted `DB` in an `EC2` instance. In fact there are a lot of advantages
+
+- `RDS` ensures that the users have `DBaaS` without installing any software.
+- `AWS` is responsile for the installation and maintainance of the `DB` software.
+- The installation of an `RDS` database is easier than a custom `DB` on `EC2`.
+- `RDS` offers automatic backup and point-in-time recovery.
+- `RDS` has a better performance than a self-hsoted `DB` in an `EC2` instance.
+
+<div class="page-break"></div>
+
 > 4- Copy the endpoint address of the database into the report.
 
 **Picture 5:**
