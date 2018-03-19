@@ -34,10 +34,10 @@ The `RDS` instance is finally more expansive than the `EC2` instance continuousl
 The usage of `RDS` is better than a self-hosted `DB` in an `EC2` instance. In fact there are a lot of advantages
 
 - `RDS` ensures that the users have `DBaaS` without installing any software.
-- `AWS` is responsile for the installation and maintainance of the `DB` software.
+- `AWS` is responsible for the installation and maintainance of the `DB` software.
 - The installation of an `RDS` database is easier than a custom `DB` on `EC2`.
 - `RDS` offers automatic backup and point-in-time recovery.
-- `RDS` has a better performance than a self-hsoted `DB` in an `EC2` instance.
+- `RDS` has a better performance than a self-hosted `DB` in an `EC2` instance.
 
 <div class="page-break"></div>
 
@@ -107,4 +107,13 @@ The only explanation that we found about the first address changing during the h
 
 > 3- Did this test really test the load balancing mechanism? What are the limitations of this simple test? What would be necessary to do realistic testing?
 
-This test is not realistic because
+The load balancing test was testing because when we increase the number of threads (100 to 1000 threads), we notice that the time response of our requests generated with Jmeter increases too and some errors appear. We conclude that an increase requests reduce the performance of load balancer.
+The limitations of this simple test are :
+
+* not realistic
+* not sufficient
+
+To make this test realistic and sufficient, we could :
+
+* test the load balancing mechanism when one or many instances became unavailable.
+* test the scalability with the load balancer (scale up or  down) in reaction of an request increase.
